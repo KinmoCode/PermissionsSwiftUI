@@ -39,7 +39,7 @@ struct ModalView: View {
         }
         .background(Color(.secondarySystemBackground))
         .edgesIgnoringSafeArea(.all)
-        .introspectViewController{
+        .introspect(.viewController, on: .iOS(.v13, .v14, .v15, .v16, .v17)) {
             if store.configStore.restrictDismissal ||
                 store.restrictAlertDismissal ||
                 store.restrictModalDismissal {
