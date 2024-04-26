@@ -18,17 +18,17 @@ struct HeaderView: View {
         let style = schemaStore.permissionViewStyle
         VStack{
             VStack{
-                if style == .alert{
-                        Text("PERMISSIONS REQUEST")
-                            .font(.footnote)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color(.systemGray2))
-                            //Make frame width take up as much space as possible, to make space for left align text
-                            .frame(maxWidth:.infinity, alignment: .leading)
-                            //Negative padding make the bottom title "shift up" a little
-                            .padding(.vertical, -5)
-                            .accessibility(identifier: "Alert header")
-                    }
+//                if style == .alert{
+//                        Text("PERMISSIONS REQUEST")
+//                            .font(.footnote)
+//                            .fontWeight(.semibold)
+//                            .foregroundColor(Color(.systemGray2))
+//                            //Make frame width take up as much space as possible, to make space for left align text
+//                            .frame(maxWidth:.infinity, alignment: .leading)
+//                            //Negative padding make the bottom title "shift up" a little
+//                            .padding(.vertical, -5)
+//                            .accessibility(identifier: "Alert header")
+//                    }
                 
                 HStack {
                     Text(.init(mainText.headerText))
